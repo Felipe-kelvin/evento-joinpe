@@ -125,7 +125,7 @@ a {
 
 .hero-image {
   background-color: #3d4a42;
-  background-image: url("image.png");
+  background-image: url("img/image.png");
   background-position: center;
   background-size: cover;
   transform: scale(1.015);
