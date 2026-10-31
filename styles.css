@@ -295,7 +295,7 @@ h2 {
 .about-details {
   display: grid;
   max-width: 640px;
-  grid-template-columns: 1fr 1fr;
+
   gap: 30px;
 }
 
@@ -304,7 +304,7 @@ h2 {
   color: #666d66;
   font-size: 14px;
   line-height: 1.8;
-  text-align: justify;
+  text-align: start;
 }
 
 .section-block {
