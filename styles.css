@@ -547,6 +547,10 @@ h2 {
   transition: color 160ms ease, background 160ms ease;
 }
 
+.footer-socials i {
+  font-size: 13px;
+}
+
 .footer-socials a:hover {
   color: var(--ink);
   background: var(--green);
