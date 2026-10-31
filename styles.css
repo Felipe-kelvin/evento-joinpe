@@ -44,7 +44,7 @@ a {
   position: relative;
   z-index: 5;
   display: flex;
-  height: 78px;
+  height: 110px;
   align-items: center;
   justify-content: space-between;
   padding: 0 max(6.5vw, calc((100vw - 1240px) / 2));
@@ -64,8 +64,8 @@ a {
 
 .brand-image {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin: 5px;
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -302,7 +302,7 @@ h2 {
 .about-details p {
   margin-bottom: 20px;
   color: #666d66;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   text-align: justify;
 }
@@ -521,7 +521,7 @@ h2 {
 .footer-copy {
   margin: 0;
   color: #aab0a9;
-  font-size: 9px;
+  font-size: 14px;
   line-height: 1.65;
 }
 
@@ -537,18 +537,18 @@ h2 {
 
 .footer-socials a {
   display: grid;
-  width: 27px;
-  height: 27px;
+  width: 45px;
+  height: 45px;
   place-items: center;
   border: 1px solid #596159;
   border-radius: 50%;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 700;
   transition: color 160ms ease, background 160ms ease;
 }
 
 .footer-socials i {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .footer-socials a:hover {
@@ -608,19 +608,20 @@ h2 {
   } */
 
   .about {
-      grid-template-columns: 1fr;
-      gap: 35px;
-      padding-top: 64px;
-      padding-bottom: 85px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 64px;
+    padding-bottom: 85px;
   }
 
   /* .about-details p {
     text-align: justify;
   } */
 
-  .section-wrap, .section-block {
-      padding-right: 24px;
-      padding-left: 24px;
+  .section-wrap,
+  .section-block {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .map-card {
@@ -697,8 +698,8 @@ h2 {
   /* Logo */
 
   .brand-image {
-    width: 60px;  
-    height: 60px;  
+    width: 60px;
+    height: 60px;
   }
 
   /*
@@ -775,12 +776,12 @@ h2 {
   }
 
   .course-carousel {
-      display: grid;
-      grid-auto-flow: row;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      overflow-y: auto;
-      padding: 2px 2px 12px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    padding: 2px 2px 12px;
   }
 
   .course-card {
