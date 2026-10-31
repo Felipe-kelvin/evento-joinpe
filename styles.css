@@ -560,6 +560,33 @@ h2 {
   text-align: right;
 }
 
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-loaded .hero-content {
+  animation: hero-enter 650ms ease-out both;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 550ms ease, transform 550ms ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 1440px) {
   .hero-content {
     padding-left: 0;
