@@ -295,7 +295,8 @@ h2 {
 .about-details {
   display: grid;
   max-width: 640px;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
