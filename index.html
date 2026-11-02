@@ -69,9 +69,34 @@
           </p>
         </div>
       </div>
-      <div class="about-schedule" id="cronograma">
-        <img src="img/cronograma.png"
-          alt="Cronograma preliminar da Jornada Interdisciplinar de Práticas em Enfermagem, nos dias 11 e 12 de novembro de 2026" />
+      <div class="about-visual">
+        <img src="img/Hero.PNG" alt="Equipe reunida em torno de uma mesa de trabalho" />
+      </div>
+    </section>
+
+    <section class="schedule section-block" id="cronograma" aria-labelledby="schedule-title">
+      <div class="schedule-heading">
+        <h2 id="schedule-title">Cronograma</h2>
+        <p>Confira a programação da nossa jornada</p>
+      </div>
+      <div class="schedule-carousel" aria-label="Imagens do cronograma">
+        <div class="schedule-track" id="schedule-track">
+          <figure class="schedule-slide">
+            <img src="img/cronograma1.PNG" alt="Cronograma da Jornada Interdisciplinar de Práticas em Enfermagem — parte 1" />
+          </figure>
+          <figure class="schedule-slide">
+            <img src="img/cronograma2.PNG" alt="Cronograma da Jornada Interdisciplinar de Práticas em Enfermagem — parte 2" />
+          </figure>
+        </div>
+      </div>
+      <div class="schedule-controls">
+        <button class="schedule-button" type="button" data-schedule-direction="-1" aria-label="Ver imagem anterior">
+          <i class="bi bi-arrow-left" aria-hidden="true"></i>
+        </button>
+        <span class="schedule-counter" aria-live="polite"><span id="schedule-current">1</span> / 2</span>
+        <button class="schedule-button" type="button" data-schedule-direction="1" aria-label="Ver próxima imagem">
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
       </div>
     </section>
 

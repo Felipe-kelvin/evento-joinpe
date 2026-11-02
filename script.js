@@ -18,6 +18,28 @@ navigation.addEventListener("click", (event) => {
 
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
+const scheduleTrack = document.querySelector("#schedule-track");
+const scheduleCurrent = document.querySelector("#schedule-current");
+
+if (scheduleTrack && scheduleCurrent) {
+  const scheduleSlides = [...scheduleTrack.querySelectorAll(".schedule-slide")];
+
+  document.querySelectorAll("[data-schedule-direction]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const currentIndex = Math.round(scheduleTrack.scrollLeft / scheduleTrack.clientWidth);
+      const direction = Number(button.dataset.scheduleDirection);
+      const nextIndex = (currentIndex + direction + scheduleSlides.length) % scheduleSlides.length;
+
+      scheduleSlides[nextIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    });
+  });
+
+  scheduleTrack.addEventListener("scroll", () => {
+    const currentIndex = Math.round(scheduleTrack.scrollLeft / scheduleTrack.clientWidth);
+    scheduleCurrent.textContent = String(currentIndex + 1);
+  }, { passive: true });
+}
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReducedMotion) {
